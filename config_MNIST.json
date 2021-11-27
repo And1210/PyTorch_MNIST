@@ -1,0 +1,47 @@
+{
+    "train_dataset_params": {
+        "dataset_name": "MNIST",
+        "dataset_path": "/drive/datasets/MNIST",
+        "stage": "train",
+        "loader_params": {
+            "batch_size": 16,
+            "shuffle": true,
+            "num_workers": 1,
+            "pin_memory": true
+        },
+        "input_size": [28, 28]
+    },
+    "val_dataset_params": {
+        "dataset_name": "MNIST",
+        "dataset_path": "/drive/datasets/MNIST",
+        "stage": "val",
+        "loader_params": {
+            "batch_size": 16,
+            "shuffle": false,
+            "num_workers": 1,
+            "pin_memory": true
+        },
+        "input_size": [28, 28]
+    },
+    "model_params": {
+        "model_name": "MNIST",
+        "is_train": true,
+        "max_epochs": 50,
+        "lr": 0.0001,
+        "momentum": 0.9,
+        "weight_decay": 1e-4,
+        "export_path": "",
+        "checkpoint_path": "",
+        "load_checkpoint": -1,
+        "lr_policy": "step",
+        "lr_decay_iters": 10
+    },
+    "visualization_params": {
+        "name": "MNIST"
+    },
+    "visualization_params_validation": {
+        "name": "MNIST"
+    },
+    "printout_freq": 250,
+    "model_update_freq": 1
+}
