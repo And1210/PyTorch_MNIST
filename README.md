@@ -1,3 +1,3 @@
-# PyTorchProjectFramework
+# MNIST PyTorch Example
 
-A basic framework for your PyTorch projects.
+A PyTorch example of a classifier for the MNIST dataset. The model can be trained by running ```python train.py config_MNIST.json```. Ensure you have Python3+!
